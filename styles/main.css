@@ -1,0 +1,1 @@
+*{box-sizing:border-box}body{border:2px solid #000}p{color:red}.container{width:1200px;overflow:auto;background-color:#f5f5f1}.sidebar{background-color:#fff;width:230px;margin-left:100px}.sidebar,.image-grid{float:left;margin-top:30px;height:800px}.image-grid{background-color:green;width:720px;margin-left:40px}.block{width:226px;height:221px;background-color:#fff}

@@ -1,5 +1,5 @@
 
-var container=$('#image-grid'),
+var container=$('.image-grid'),
 item_title,
 item_store,
 item_price,
@@ -14,9 +14,9 @@ display;
   item_price = "<span>" + object.price + " " + object.currency_code + "<span>";
 
   object.Images.forEach (function (y) {
-  item_image = "<img src='" + y.url_170x135 + "' />'";
+  item_image = "<img src='" + y.url_170x135 + "' />";
 });
 
-  display = "<li>" + item_title + item_image + item_store + item_price + "<hr /></li>";
+  display = "<li>" + item_image + item_title + item_store + item_price + "</li>";
   container.append(display);
 });

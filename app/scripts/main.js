@@ -20,3 +20,5 @@ display;
   display = "<li>" + item_image + item_title + item_store + item_price + "</li>";
   container.append(display);
 });
+
+//$('image-grid').find('li')

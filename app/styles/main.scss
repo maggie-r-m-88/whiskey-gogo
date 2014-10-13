@@ -2,117 +2,121 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
+$font-one:'Sintony', sans-serif;
+$font-two: 'Rosario', sans-serif;
+$width: 1200px;
+
+
+.who{
+  font-size: 200px;
+  color: hsla(350, 100%, 51%, 1);
+  margin-bottom: -75px;
+  transition: text-align 1.2s ease-in;
+}
+.who:hover{
+  color: hsla(43, 100%, 51%, 1);
+  text-align: right;
+}
+
+.what{
+  font-size: 180px;
+  color: hsla(8, 100%, 51%, 1);
+  margin-bottom: -75px;
+}
+
+.why{font-size: 160px;
+  color: hsla(16, 100%, 51%, 1);
+  margin-bottom: -75px;
+}
+.where{ font-size: 140px;
+  color: hsla(32, 100%, 51%, 1);
+  margin-bottom: -75px;
+}
+.when{font-size: 160px;
+  color: hsla(36, 100%, 51%, 1);
+  margin-bottom: -75px;
+}
+.how{ font-size: 140px;
+  color: hsla(43, 100%, 51%, 1);
+  margin-bottom: -75px;
+}
 
 body{
-background-color: rgb(245,245,241);
-}
-.container {
-width: 1200px;
-position: relative;
-background-color: rgba(255,255,255,1);
-}
+  background-color: white;
 
-.sidebar{
-  background-color: rgba(255,255,255,1);
-  width: 300px;
-  position: absolute;
-  margin-top: 30px;
-  margin-left: 100px;
-
-
- h4{
-  margin-left: 10px;
-  font-size: 13px;
-  color: rgb(102,102,102);
- }
- a{
-   text-decoration:none;
-   color: rgb(112,163,187);
- }
- a:hover{
-   text-decoration: underline;
- }
 }
-.input-radio{
-  color: rgb(102,102,102);
-  font-size: 13px;
-  margin-top: 10px;
-  padding-bottom:10px;
-  border: none;
-}
-legend{
-  font-weight: bold;
-}
-.sidebar ul{
-  list-style-type: none;
-  margin-left: -30px;
-  font-weight:bold;
-  color: rgb(102,102,102);
-  font-size: 13px;
-}
-.sidebar li{
-  list-style-type: none;
-  margin-left: 30px;
-  font-size: 13px;
-  margin-left: 15px;
-  font-weight: normal;
-  margin-top: 8px;
-}
-
-.image-grid{
-  width: 760px;
-  background-color: rgba(245,245,241,1);
-  list-style-type: none;
-  margin-top: 30px;
-  margin-left: 330px;
-  position: absolute;
-
- li {
-  width: 219px;
-  height: 213px;
-  margin-bottom: 25px;
-  margin-left: 20px;
-  display: inline-block;
-  background-color: rgba(255,255,255,1);
+.container{
+  width: $width;
   position: relative;
-  border:  0.07em solid gray;
-  border-radius: 2px;
+  font-family: $font-two;
+}
 
+.pic-box{
+width: 250px;
+height: 300px;
+
+}
+.magenta{
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 50px;
+  width: 700px;
+  height: 830px;
+  opacity: .95;
+  border-radius: 25px;
+  border: 5px dotted red; background-image:url("/images/quotes.jpg");
 }
 
 
-li:hover{
-  box-shadow: 0 0 0.25em black;
-}
-  img{
-  width: 213px;
-  height: 171px;
-  margin: 3px;
-  }
-  h3{
-    width: 218px;
-    font-size: 12px;
-    white-space: nowrap;
-    overflow: hidden;
-    margin-top: -4px;
-    margin-left: 3px;
-    text-overflow: ellipsis;
-  }
-  p{
-    font-size: 12px;
-    color: gray;
-    margin-top: -10px;
-    margin-left: 3px;
 
-  }
-  span {
-    color: green;
-    width: 164px;
-    position: absolute;
-    margin-top: 193px;
-    top: 0;
-    right: 10px;
-    text-align:right;
 
+.box-one{  width: $width;
+  height: 100px;
+  background-color: black;
+  margin-bottom: 10px;
   }
+.box-two{ width: $width;
+  height: 90px;
+  background-color: black;
+  margin-bottom: 20px;
 }
+.box-three{width: $width;
+  height: 80px;
+  background-color: black;
+  margin-bottom: 30px;
+  }
+.box-four{width: $width;
+height: 70px;
+background-color: black;
+margin-bottom: 40px;
+}
+.box-five{width: $width;
+height: 60px;
+background-color: black;
+margin-bottom: 50px;
+}
+
+.box-six{  width: $width;
+  height: 50px;
+  background-color: black;
+  margin-bottom: 60px;
+  }
+.box-seven{ width: $width;
+  height: 40px;
+  background-color: black;
+  margin-bottom: 70px;
+}
+.box-eight{width: $width;
+  height: 30px;
+  background-color: black;
+  margin-bottom: 80px;
+  }
+.box-nine{width: $width;
+height: 20px;
+background-color: black;
+margin-bottom: 90px;
+}
+.box-ten{width: $width;
+height: 10px;
+background-color: black;
+margin-bottom: 100px;}

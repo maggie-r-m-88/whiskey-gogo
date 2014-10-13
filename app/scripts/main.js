@@ -1,24 +1,13 @@
+$(document).ready(function(){
 
-var container=$('.image-grid'),
-item_title,
-item_store,
-item_price,
-display;
+	$('ul.tabs li').click(function(){
+		var tab_id = $(this).attr('data-tab');
 
-  etsyList.results.forEach( function (object) {
+		$('ul.tabs li').removeClass('current');
+		$('.tab-content').removeClass('current');
 
-  item_title = "<h3>" + object.title + "</h3>";
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	})
 
-  item_store = "<p>" + object.Shop.shop_name; + "</p>";
-
-  item_price = "<span>" + object.price + " " + object.currency_code + "<span>";
-
-  object.Images.forEach (function (y) {
-  item_image = "<img src='" + y.url_170x135 + "' />";
-});
-
-  display = "<li>" + item_image + item_title + item_store + item_price + "</li>";
-  container.append(display);
-});
-
-//$('image-grid').find('li')
+})

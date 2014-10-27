@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>maggiemartin (Maggie Martin)</title>
+    <title>jquery inject</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css styles/vendor.css -->
@@ -14,44 +14,73 @@
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
-    <link href='http://fonts.googleapis.com/css?family=Sintony|Rosario' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles/main.css">
-
     <!-- endbuild -->
 
-    <!-- build:js scripts/vendor/modernizr.js -->
+    <!-- build:jsscripts/vendor/modernizr.js -->
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
   <body>
 
+    <div class="container">
 
-
-
-<div class="box-one"></div>
-<div class="box-two"></div>
-<div class="box-three"></div>
-<div class="box-four"></div>
-<div class="box-five"></div>
-<div class="box-six"></div>
-<div class="box-seven"></div>
-<div class="box-eight"></div>
-<div class="box-nine"></div>
-<div class="box-ten"></div>
+      <div class="sidebar">
+        <div class="input-radio">
+          <fieldset>
+          <legend>Item Type</legend>
+          <input type="hidden"  value="" id="SubmitQuestion" />
+          <input type="radio" id="SubmitQuestion1" value="1"  />
+          <label for="SubmitQuestion1"><a href="#">All Items</a></label><br><br>
+          <input type="radio"  id="SubmitQuestion2" value="2"  />
+          <label for="SubmitQuestion2"><a href="#">Handmade</a></label><br><br>
+          <input type="radio"  id="SubmitQuestion3" value="3"  />
+          <label for="SubmitQuestion3"><a href="#">Vintage</a></label>
+      </fieldset>
+          </div>
+        <h4>Categories</h4>
+        <ul><a href="#">Handmade</a>
+          <li><a href="#">Weddings</a></li>
+          <li><a href="#">Glass</a></li>
+          <li><a href="#">Housewares</a></li>
+          <li><a href="#">Jewelry</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Clothing</a></li>
+          <li><a href="#">Art</a></li>
+          <li><a href="#">Ceramics and Pottery</a></li>
+        </ul>
+        <ul><a href="#">Vintage</a>
+          <li><a href="#">Collectibles</a></li>
+          <li><a href="#">Serving</a></li>
+          <li><a href="#">Housewares</a></li>
+          <li><a href="#">Antique</a></li>
+          <li><a href="#">Housewares</a></li>
+        </ul>
+        <ul><a href="#">Craft Supplies</a>
+          <li><a href="#">Bead</a></li>
+          <li><a href="#">Commercial</a></li>
+          <li><a href="#">Fabric</a></li>
+          <li><a href="#">Scrapbooking</a></li>
+        </ul>
 
 </div>
-<div class="mat">
-</div>
 
+      </div>
+      <ul class="image-grid">
+
+      </ul>
+
+  </div>
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
-
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
+        <script src="scripts/items.js"></script>
         <script src="scripts/main.js"></script>
+
         <!-- endbuild -->
 </body>
 </html>
